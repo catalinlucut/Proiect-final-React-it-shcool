@@ -1,0 +1,403 @@
+.main {
+  text-align: center;
+  position: relative;
+  margin-top: 64px;
+}
+/* ASIDE  */
+.wrap-interests {
+  background-color: white;
+  display: flex;
+  position: fixed;
+  top: 64px;
+  margin: 0;
+  z-index: 999;
+}
+
+.interests {
+  padding: 0 16px 0 16px;
+  background-color: #fff;
+  overflow: auto;
+  max-height: 90vh;
+  font-size: 16px;
+}
+
+.interests-title {
+  margin-top: 16px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #909090;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bfbfbf;
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #929292;
+}
+
+.interests h3 {
+  color: #909090;
+  margin-bottom: 16px;
+}
+
+.interests ul.intrests-list {
+  list-style: none;
+  min-width: 230px;
+}
+
+.interests ul.intrests-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.interests ul.intrests-list li div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  align-items: center;
+}
+
+.interests
+  ul.intrests-list
+  li.intrests-item
+  span[class="material-symbols-outlined"] {
+  font-size: 20px;
+}
+
+.interests-item span:hover {
+  cursor: pointer;
+}
+
+.active-pin {
+  color: orangered;
+}
+
+.active-filter {
+  border-bottom: 1px solid #d8d8d8;
+  border-top: 1px solid #d8d8d8;
+}
+
+/* FEED */
+.feed {
+  display: inline-block;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  box-shadow: 0px 3px 8px #d8d8d8;
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  width: 700px;
+}
+
+.article-category {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 8px 0px 8px;
+}
+
+.categories {
+  display: flex;
+  gap: 8px;
+}
+
+.category {
+  background-color: #eeeeee;
+  padding: 4px 8px;
+  border-radius: 50px;
+}
+
+.article-title {
+  font-size: 24px;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.article-img {
+  text-align: center;
+  background-color: #eeeeee;
+}
+
+.article-img img {
+  max-height: 550px;
+}
+
+.feed article div.article-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+.vote-and-comment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  color: #909090;
+}
+
+.up-vote,
+.down-vote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.voted {
+  color: orangered;
+}
+
+.down-vote .material-symbols-outlined {
+  transform: rotate(180deg);
+}
+
+.social-media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 24px;
+  color: #909090;
+}
+
+.share-post {
+  display: flex;
+  align-items: center;
+}
+
+.share-post p {
+  font-size: 16px;
+}
+
+.article-comment-section form input {
+  width: 95%;
+  height: 32px;
+  font-size: 16px;
+  border-style: solid;
+  border-color: #dfdfdf;
+  margin: 16px;
+  padding: 0 12px 0 12px;
+  border-radius: 15px;
+}
+
+.article-comment-section ul {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.article-comment-section ul li {
+  background-color: #eeeeee;
+  margin-bottom: 16px;
+  margin: 0 16px 16px 16px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.username {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.username-logo {
+  background-color: #909090;
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 24px;
+}
+
+.username-name {
+  font-weight: bold;
+}
+
+.comment-body {
+  margin-left: 56px;
+}
+
+.comment-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.comment-time {
+  color: #909090;
+  font-size: 14px;
+}
+
+.comment-action {
+  display: flex;
+  gap: 16px;
+}
+
+.edit,
+.remove {
+  background-color: #eeeeee;
+  font-size: 18px;
+}
+/* **************************MEDIA QUERIES********************/
+/* **************************MEDIA QUERIES********************/
+/* **************************MEDIA QUERIES********************/
+
+@media (max-width: 730px) {
+  .main {
+    margin-top: 58px;
+  }
+
+  .article {
+    width: 500px;
+  }
+
+  .article-category {
+    font-size: 12px;
+  }
+
+  .article-title {
+    font-size: 20px;
+  }
+
+  .article-img img {
+    max-width: 450px;
+  }
+
+  .vote-and-comment,
+  .up-vote,
+  .down-vote {
+    font-size: 12px;
+  }
+
+  .down-vote .material-symbols-outlined,
+  .up-vote .material-symbols-outlined,
+  .social-media,
+  .chat-bubble span,
+  .bookmark span {
+    font-size: 20px;
+  }
+
+  .article-comment-section form input {
+    width: 95%;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .username {
+    font-size: 14px;
+  }
+
+  .comment-body {
+    font-size: 14px;
+  }
+
+  .comment-time {
+    font-size: 12px;
+  }
+
+  .edit,
+  .remove {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 530px) {
+  .main {
+    margin-top: 48px;
+  }
+
+  .article {
+    width: 300px;
+  }
+
+  .article-category {
+    font-size: 10px;
+  }
+
+  .categories {
+    gap: 2px;
+  }
+
+  .article-title {
+    font-size: 14px;
+  }
+
+  .article-img img {
+    max-width: 250px;
+  }
+
+  .vote-and-comment {
+    gap: 8px;
+  }
+
+  .up-vote,
+  .down-vote {
+    font-size: 10px;
+    display: flex;
+    gap: 2px;
+  }
+
+  .vote-count {
+    margin-bottom: 3px;
+  }
+
+  .down-vote .material-symbols-outlined,
+  .up-vote .material-symbols-outlined,
+  .social-media,
+  .chat-bubble span,
+  .bookmark span {
+    font-size: 12px;
+  }
+
+  .social-media {
+    gap: 8px;
+  }
+
+  .social-media .share-post .share {
+    margin-top: 1.5px;
+    font-size: 10px;
+  }
+
+  .article-comment-section ul li {
+    margin-bottom: 10px;
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .username {
+    font-size: 10px;
+    gap: 10px;
+  }
+
+  .comment-body {
+    font-size: 12px;
+    margin-left: 40px;
+    line-height: 1.2;
+  }
+
+  .comment-time {
+    font-size: 10px;
+  }
+
+  .edit,
+  .remove {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,31 @@
+.wrap-search {
+  position: absolute;
+  right: 48px;
+  top: 64px;
+  padding: 16px;
+  background-color: #e6e6e6;
+  border-radius: 12px;
+}
+
+.search {
+  width: 320px;
+  height: 32px;
+  border: solid 1px #b3b3b3;
+  border-radius: 8px;
+  padding: 0 12px 0 12px;
+}
+
+@media (max-width: 730px) {
+  .wrap-search {
+    top: 60px;
+  }
+}
+
+@media (max-width: 530px) {
+  .wrap-search {
+    top: 56px;
+  }
+  .search {
+    width: 200px;
+  }
+}

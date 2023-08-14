@@ -1,0 +1,36 @@
+.wrap-login {
+  position: absolute;
+  top: 64px;
+  right: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #e6e6e6;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-form input {
+  height: 32px;
+  border: solid 1px #b3b3b3;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.submit {
+  margin-top: 8px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: #7c7b7b;
+  color: #fff;
+}
+
+.button.register {
+  color: black;
+}

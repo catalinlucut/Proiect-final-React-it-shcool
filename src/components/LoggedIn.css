@@ -1,0 +1,36 @@
+.wrap-logged-in {
+  position: absolute;
+  top: 64px;
+  right: 64px;
+}
+
+.logged-in-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #e6e6e6;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.save-post,
+.log-out {
+  margin-top: 8px;
+  height: 24px;
+  border-radius: 8px;
+  background-color: #7c7b7b;
+  color: #fff;
+}
+
+@media (max-width: 730px) {
+  .wrap-logged-in {
+    top: 60px;
+  }
+}
+
+@media (max-width: 530px) {
+  .wrap-logged-in {
+    right: 40px;
+    top: 56px;
+  }
+}

@@ -1,0 +1,154 @@
+.header {
+  position: relative;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0px 3px 8px #d8d8d8;
+  margin-bottom: 24px;
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  overflow: visible;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.logo img {
+  height: 32px;
+  width: auto;
+}
+
+.logo ion-icon {
+  font-size: 32px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 24px;
+  font-weight: 600;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  list-style: none;
+}
+
+.btn {
+  font-size: 16px;
+}
+
+.btn-active {
+  border-bottom: solid 2px #000000;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.action ion-icon {
+  font-size: 24px;
+  color: #7c7b7b;
+}
+
+.action span.log-in {
+  color: #7c7b7b;
+}
+
+.open-logged-in {
+  padding: 8px;
+  background-color: #d8d8d8;
+  border-radius: 16px;
+}
+
+/* ********************MEDIA QUERIES******************** */
+/* ********************MEDIA QUERIES******************** */
+/* ********************MEDIA QUERIES******************** */
+
+@media (max-width: 730px) {
+  .logo img {
+    height: 24px;
+    width: auto;
+  }
+
+  .logo ion-icon {
+    font-size: 24px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .action ion-icon {
+    font-size: 20px;
+  }
+
+  .post {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 530px) {
+  .nav-bar ul {
+    gap: 18px;
+  }
+
+  .logo {
+    gap: 4px;
+    /* margin-top: 6px; */
+  }
+
+  .logo img {
+    height: 18px;
+    width: auto;
+  }
+
+  .logo ion-icon {
+    margin-top: 6px;
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  ul.nav-list {
+    gap: 6px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+
+  .action ion-icon {
+    font-size: 16px;
+  }
+
+  .post {
+    font-size: 10px;
+    padding: 6px 10px;
+    border-radius: 12px;
+  }
+
+  .action {
+    gap: 6px;
+  }
+
+  .open-logged-in {
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 16px;
+  }
+}
